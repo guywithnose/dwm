@@ -8,6 +8,10 @@ OBJ = ${SRC:.c=.o}
 
 all: options dwm
 
+docker:
+	docker build -t dwm .
+	docker run -v $$(pwd):/code dwm
+
 options:
 	@echo dwm build options:
 	@echo "CFLAGS   = ${CFLAGS}"
