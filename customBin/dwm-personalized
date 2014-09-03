@@ -9,4 +9,5 @@ do
     sleep 1m
 done &
 wall
+xhost +
 exec dwm
