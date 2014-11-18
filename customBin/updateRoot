@@ -1,0 +1,4 @@
+DATE=$(date +"%Y-%m-%d %I:%M")
+BAT=$(acpi -b | awk '{ print $3 $4 }' | tr ',' ' ')
+VOLUME=$(amixer get Master|grep %|sed 's/.*\[\([0-9]*%\)\].*\[\(on\|off\)\]/\1 \2/'|sed 's/ on//'|sed 's/.* off/Mute/')
+xsetroot -name "Vol:$VOLUME Bat:$BAT $DATE"

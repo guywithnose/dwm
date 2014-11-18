@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+wmname LG3D
+numlockx
+sudo nm-applet &>/dev/null &
+while true
+do
+    updateRoot
+    sleep 1m
+done &
+wall
+exec dwm
