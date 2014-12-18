@@ -47,8 +47,8 @@ static const Layout layouts[] = {
 
 /* commands */
 static const char *dmenucmd[] = { "dmenu_run", "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
-static const char *termcmd[]  = { "gnome-terminal", NULL };
-//static const char *termcmd[]  = { "urxvt", NULL };
+/* static const char *termcmd[]  = { "gnome-terminal", NULL }; */
+static const char *termcmd[]  = { "urxvt", NULL };
 static const char *browsercmd[] = { "firefox", NULL };
 static const char *browsercmd2[] = { "xxxterm", NULL };
 static const char *screenlockercmd[] = { "gnome-screensaver-command", "-l", NULL };
