@@ -1,9 +1,9 @@
 #!/bin/bash
-#
-wmname LG3D
+
+# wmname LG3D
 numlockx
 setxkbmap -option 'ctrl:nocaps'
-sudo nm-applet &>/dev/null &
+# sudo nm-applet &>/dev/null &
 while true
 do
     updateRoot
@@ -12,3 +12,4 @@ done &
 wall
 xhost +
 exec dwm
+# exec ck-launch-session dbus-launch --sh-syntax --exit-with-session dwm
